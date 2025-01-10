@@ -374,7 +374,7 @@ a:focus {
 
 .slider_section .detail-box .btn-box .btn-1:hover {
   background-color: #ffffff;
-  color: #000000;
+  color: #ffee00;
 }
 
 .slider_section #carouselExampleIndicators {
@@ -841,7 +841,7 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   padding: 95px 25px 45px 25px;
-  background-color: #050304;
+  background-color: #ed8dda;
 }
 
 .client_section .box .detail-box h4 {
