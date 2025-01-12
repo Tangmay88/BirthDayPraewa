@@ -1607,35 +1607,3 @@ a:focus {
   line-height: 1.6; /* เพิ่มระยะบรรทัดให้อ่านง่าย */
 }
 
-.slide-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.main-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateX(-50%) translateY(0); /* ตำแหน่งปกติ */
-  }
-  50% {
-    transform: translateX(-50%) translateY(-10px); /* ขึ้นไปเล็กน้อย */
-  }
-} 
-
-.floating-icon {
-  position: absolute;
-  top: -20px; /* ปรับตำแหน่งลอย */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px; /* ขนาดของไอคอน */
-  height: auto;
-  z-index: 10;
-  animation: bounce 1.5s infinite; /* ใช้แอนิเมชัน bounce */
-}
