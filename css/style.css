@@ -1120,7 +1120,7 @@ a:focus {
 
   position: absolute;   /* ใช้ absolute เพื่อจัดตำแหน่ง */
   top: -36px;
-  right: 250px; /* ให้อยู่ที่ขอบขวา */
+  right: 270px; /* ให้อยู่ที่ขอบขวา */
   z-index: 50;   /* ทำให้ภาพอยู่เหนือเนื้อหาอื่น */
   position: absolute;
   /*bottom: 10px;
@@ -1593,4 +1593,49 @@ a:focus {
   text-align: center;
   transition: border-color .3s ease;
   width: 40px;
+}
+
+.no-marker-list {
+  list-style: none; /* ลบจุด marker */
+  margin: 0; /* ลบระยะห่างรอบ */
+  padding: 0; /* ลบระยะเยื้องใน */
+}
+
+.no-marker-list li {
+  text-align: left; /* จัดข้อความชิดซ้าย */
+  margin-bottom: 1rem; /* เพิ่มระยะห่างระหว่างแต่ละข้อ */
+  line-height: 1.6; /* เพิ่มระยะบรรทัดให้อ่านง่าย */
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0); /* ตำแหน่งปกติ */
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px); /* ขึ้นไปเล็กน้อย */
+  }
+} 
+
+.floating-icon {
+  position: absolute;
+  top: -20px; /* ปรับตำแหน่งลอย */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* ขนาดของไอคอน */
+  height: auto;
+  z-index: 10;
+  animation: bounce 1.5s infinite; /* ใช้แอนิเมชัน bounce */
 }
