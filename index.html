@@ -237,9 +237,9 @@
                       <h2 class="text-2xl font-medium w-[350px] text-wrap font-['Kanit'] font-extrabold text-[#f78da4]"> เปิดของขวัญได้แล้ว</h2>
                       <div class="floating-image-container" style="text-align: center; margin-bottom: -30px;">
                         <!-- ปรับ margin-bottom -->
-                        <img id="boxImage1" src="images/gift.gif" alt="Floating Image" class="floating-image"
+                        <img id="boxImage1" src="images/gift_1.png" alt="Floating Image" class="floating-image"
                           onclick="clickBoxBirthDay()">
-                        <img id="boxImage2" src="images/love_1.gif" style="width: 500px; height: auto; padding-top: 50px;"
+                        <img id="boxImage2" src="images/gif/gift_2.gif" style="width: 450px; height: auto; padding-top: 50px;"
                           onclick="document.getElementById('boxImage1').style.display = 'none';">
 
 
@@ -563,7 +563,7 @@
     function clickBoxBirthDay() {
       document.getElementById('boxImage1').style.display = 'none';
       document.getElementById('boxImage2').style.display = '';
-      setTimeout(myGreeting, 4000);
+      setTimeout(myGreeting, 8000);
     }
 
     function myGreeting() {
