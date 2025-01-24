@@ -84,7 +84,7 @@
             <!-- Swiper -->
 
 
-            <div class=" swiper mySwiper" style="margin-top: 155px;">
+          <!--  <div class=" swiper mySwiper" style="margin-top: 155px;">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="images/PraewaXBirthDay/praewa_1.jpg" alt="" style="width: 100%; height: auto;" />
@@ -121,7 +121,30 @@
               <div class="floating-image-container2">
                 <img src="images/sunflower.png" alt="Floating Image1" class="floating-image1" />
               </div>
-            </div>
+            </div> -->
+            <div style="margin-top: 170px;"> 
+              <!--<h1 class="title">Hover over the cards</h1> -->
+              
+              <div id="app" class="container-depth">
+                <card data-image="images/Birthday/p12.jpg">
+                  <h1 slot="header">Sunshine</h1>
+                  <p slot="content">หนูเปรียบดั่งแสงแดดที่ส่องสว่าง มอบพลังบวกและความอบอุ่นให้กับคนรอบข้าง</p>
+                </card>
+                <card data-image="images/Birthday/p10.jpg">
+                  <h1 slot="header">Performance</h1>
+                  <p slot="content">ความสามารถในการแสดงที่เต็มเปี่ยมด้วยพลัง ถ่ายทอดอารมณ์และความตั้งใจได้อย่างยอดเยี่ยม</p>
+                </card>
+                <card data-image="images/Birthday/p1.jpg">
+                  <h1 slot="header">Beautiful</h1>
+                  <p slot="content">หนูงดงามทั้งภายนอกและภายใน สะท้อนความมั่นใจและเสน่ห์ในแบบของหนู</p>
+                </card>
+                <card data-image="images/Birthday/p3.jpg">
+                  <h1 slot="header">Funny</h1>
+                  <p slot="content">มีอารมณ์ขันและความน่ารักสดใส สร้างรอยยิ้มและเสียงหัวเราะให้กับแฟนๆ</p>
+                </card>
+              </div>
+              </div>
+
 
             <!-- HTML -->
             <div class="floating">
@@ -130,7 +153,7 @@
                 <div class="song-info">
                   <img src="images/p_1.png" class="song-avatar" alt="Floating Image1" id="songAvatar">
                   <div class="song-details">
-                    <p class="song-title">เอาปากกามาวง - Original by Bell Warisara</p>
+                    <p class="song-title">เอาปากกามาวง</p>
                     <p class="artist-name">Praewa (Cover)</p>
                   </div>
                 </div>
@@ -197,6 +220,7 @@
 
                 <section class="about_section" id="aa">
                   <div class="container-fluid">
+                    
                     <div class="swiper mySwiper1">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -438,6 +462,22 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -495,7 +535,7 @@
       video.play(); // เล่นวิดีโอในสไลด์ปัจจุบัน
     }
   });
-  </script>
+  </script> -->
 
   <!-- Audio -->
 
@@ -577,6 +617,8 @@
     document.getElementById("boxImage3").style.display = 'none';
   </script>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+<script type="text/javascript" src="js/script-depth-cards.js"></script>
 
 
 </body>

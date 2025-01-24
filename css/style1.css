@@ -1014,8 +1014,28 @@ a:focus {
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
 
-
 .swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+/*.swiper {
   width: 300px;
   height: 500px;
 }
@@ -1068,7 +1088,7 @@ a:focus {
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
-} -->
+}*/
 
 /* กำหนดภาพให้ลอยและกระดุกกระดิก */
 
@@ -1704,3 +1724,5 @@ a:focus {
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
+
+
